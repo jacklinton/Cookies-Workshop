@@ -1,0 +1,55 @@
+.redBox {
+	z-index: 1;
+	height: 275px;
+	width: 200px;
+	position: fixed;
+	background-color: red;
+	display: none;
+	left: 50%;
+	top: 50%;
+	float: left;
+	padding: 30px;
+	text-align: center;
+}
+
+.redBoxRotate {
+	animation: redBoxRotate 3s;
+}
+
+@keyframes redBoxRotate {
+	0% {
+		opacity: 0;
+		transform: rotateY(0deg);
+	}
+	100% {
+		opacity: 1;
+		transform: rotateY(720deg);
+	}
+}
+
+.cookie {
+	display: inline-block;
+	width: 300px;
+}
+.count {
+	display: inline-block;
+	width: 400px;
+	height: 30px;
+	margin-top: 100px;
+	background-color: none;
+	text-align: center;
+	z-index: 1;
+}
+
+
+.sugar {
+	margin-left: 50px;
+}
+
+.chocolate {
+	margin-left: 125px;
+}
+
+.lemon {
+	margin-left: 135px;
+}
