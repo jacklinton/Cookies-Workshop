@@ -81,7 +81,7 @@ $(document).ready(function(){
 		$("#lemonCount").empty()
 		$("#lemonCount").html("<h4>" + lemonCount + "</h4>")
 		Cookies.set("lemonCount", lemonCount)
-		if (chocolateCount > 10 && lemonCount<=15) {
+		if (lemonCount > 10 && lemonCount<=15) {
 			$(".lemonCount").css("color", "red")
 		}
 		else if (lemonCount > 15) {
@@ -90,6 +90,26 @@ $(document).ready(function(){
 		}
 	})
 
+	$(".clearBtn").click(function(){
+		sugarCount = 0
+		chocolateCount = 0
+		lemonCount = 0
+
+		$("#sugarCount").html("<h4>" + sugarCount + "</h4>")
+		$("#chocolateCount").html("<h4>" + chocolateCount + "</h4>")
+		$("#lemonCount").html("<h4>" + lemonCount + "</h4>")
+
+		Cookies.set("sugarCount", 0)
+		Cookies.set("chocolateCount", 0)
+		Cookies.set("lemonCount", 0)
+
+		$("#sugarCount").css("color", "black" )
+		$("#sugarCount").css("background-color", "white")
+		$("#chocolateCount").css("color", "black")
+		$("#chocolateCount").css("background-color", "white")
+		$("#lemonCount").css("color", "black") 
+		$("#lemonCount").css("background-color", "white")
+	})
 
 
 
